@@ -15,6 +15,7 @@
             <ul>
                 <li><a href="javascript:(function(){alert('ブックマークレットのテンプレートです(^o^)');})();">雛形</a></li>
                 <li><a href="javascript:setInterval(() => {document.getElementsByClassName('ytp-ad-skip-button')[0]?.click();document.getElementsByClassName('ytp-ad-overlay-close-button')[0]?.click();const elm = document.getElementsByClassName('ytp-ad-message-container')[0];elm?.parentNode.removeChild(elm);}, 13);">Youtube　広告自動スキップ</a></li>
+                <li><a href="javascript:(function(){const getChildren = (elm) => Array.from(elm.children).flatMap(child => [child, ...getChildren(child)]);getChildren(document.querySelector('body')).filter(elm => getComputedStyle(elm).position === 'fixed').filter(elm => /cookie/i.test(getChildren(elm).map(child => child.innerText).join(''))).forEach(elm => elm.parentNode.removeChild(elm));})();">Cookie 削除</a></li>
             </ul>
         <div>
     </body>
