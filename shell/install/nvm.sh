@@ -10,3 +10,6 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 # 最新のLTS版をインストール
 nvm install --lts
 nvm ls
+
+# yarn
+npm install --global yarn
